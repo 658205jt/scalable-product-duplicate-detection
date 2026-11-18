@@ -3,7 +3,7 @@ from collections import defaultdict
 from itertools import combinations
 
 class CustomSimHash:
-    def __init__(self, num_bits: int = 128, seed: int = 42):
+    def __init__(self, num_bits: int = 240, seed: int = 42):
         self.num_bits = num_bits
         self.rng = np.random.default_rng(seed)
         self.hyperplanes = None
