@@ -9,6 +9,7 @@ def normalize_text(text: str) -> str:
     text = re.sub(r'(\d+)\s*(hz|hertz)', r'\1hz', text)
     text = re.sub(r'(\d+(?:\.\d+)?)\s*(?:"|inch|inches|-inch)', r'\1inch', text)
     text = re.sub(r'(\d+)\s*x\s*(\d+)', r'\1x\2', text)
+    text = re.sub(r'([a-z0-9])[-/]([a-z0-9])', r'\1\2', text)
     text = re.sub(r'[^a-z0-9\s]', ' ', text)
     return re.sub(r'\s+', ' ', text).strip()
 

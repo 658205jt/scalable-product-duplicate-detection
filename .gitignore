@@ -11,7 +11,7 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Datasets & raw data (too large for Git)
-data/
+# data/
 datasets/
 *.csv
 *.parquet
