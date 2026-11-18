@@ -1,5 +1,4 @@
-Markdown
-# Scalable Product Duplicate Detection via Character N-Gram TF-IDF and SimHash
+# Product Duplicate Detection via Character N-Gram TF-IDF and SimHash
 
 Implementation of a scalable two-stage product duplicate detection pipeline evaluated on the `TVs-all-merged` dataset.
 
