@@ -10,7 +10,7 @@ if __name__ == '__main__':
     print(f"Loaded {len(products)} products in {time.perf_counter() - t0:.2f}s.")
 
     num_bits = 240
-    band_configs = [48, 40, 30, 24, 20, 16]  # r = 5, 6, 8, 10, 12, 15
+    band_configs = [48, 40, 30, 24, 20, 16]
     results = run_bootstrap_experiment(
         products, n_bootstraps=5, num_bits=num_bits, band_configs=band_configs
     )

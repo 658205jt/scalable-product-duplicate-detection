@@ -65,7 +65,7 @@ def cluster_pairs(n_items: int, cand_list: list, sims: np.ndarray, threshold: fl
 def run_bootstrap_experiment(products: list, n_bootstraps: int = 5, num_bits: int = 240,
                              band_configs: list = None, ngram_range: tuple = (3, 4), seed: int = 42):
     if band_configs is None:
-        band_configs = [30, 24, 20, 16]  # r = 8, 10, 12, 15 (keeps FracComp <= 0.11)
+        band_configs = [48, 40, 30, 24, 20, 16]
 
     rng = np.random.default_rng(seed)
     n_total = len(products)
